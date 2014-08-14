@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Specification-Vendor: SAP AG
+Implementation-Vendor-Id: local
+Implementation-Vendor: local
+Implementation-Version: 0
+Implementation-Title: MultiCountryPrototype

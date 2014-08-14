@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet >
+	<view uin="Vz8va46hyl6d1z2huxvja">
+		<property name="$parentUin" value="WebDynpro:Window:://WebDynpro/Window#com.kl.comp.MCComp"/>
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="WDWindowDiagram"/>
+		<reference referencedUin="WebDynpro:ViewUsage:://WebDynpro/Window#com.kl.comp.MCComp/ViewsetHierarchyRootNode#com.kl.comp.MCCompViewUsage1">
+			<property name="bounds" value="10,10,100,50"/>
+		</reference>
+	</view>
+</nodeSet>

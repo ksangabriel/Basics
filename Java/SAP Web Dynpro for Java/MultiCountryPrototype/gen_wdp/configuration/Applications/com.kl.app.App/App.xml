@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><wdrr:repository xmlns:wdrr="http://xml.sap.com/2002/04/webdynpro/runtime_repository" xmlns:wdapp="http://xml.sap.com/2002/04/webdynpro/runtime_repository/model" schemaRelease="WebAS 7.00" schemaVersion="20040901" modelRelease="WebAS 7.00" modelVersion="20040901" modelName="com.sap.tc.webdynpro.progmodel.repository.IWDProgmodelRepository" layerType="V" layerQualifier="base" custQualifier="base" fileGUID="1">
+	<wdapp:IWDApplicationInfo wdrr:original="true" wdrr:masterlocale="en" name="com.kl.app.App">
+		<wdrr:association name="StartupPlug">
+			<wdrr:entry state="A" orderIndex="0" targetName="com.kl.comp.MCComp" targetType="com.sap.tc.webdynpro.progmodel.repository.IWDComponentInfo" targetPath="ComponentInterface:MCCompInterface/InterfaceViews:MCCompInterfaceView/InboundPlugs:Default"/>
+		</wdrr:association>
+		<wdrr:association name="Component">
+			<wdrr:entry state="A" orderIndex="0" targetName="com.kl.comp.MCComp" targetType="com.sap.tc.webdynpro.progmodel.repository.IWDComponentInfo"/>
+		</wdrr:association>
+	</wdapp:IWDApplicationInfo>
+</wdrr:repository>

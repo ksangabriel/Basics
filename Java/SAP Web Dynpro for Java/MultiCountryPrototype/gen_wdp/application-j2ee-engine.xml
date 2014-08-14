@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application-j2ee-engine>
+    <provider-name>local</provider-name>  
+    <modules-additional>
+    <module>
+      <entry-name>MultiCountryPrototype.wda</entry-name> 
+      <container-type>webdynpro</container-type> 
+    </module>
+  </modules-additional>
+</application-j2ee-engine>

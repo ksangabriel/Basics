@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <application-config>
+            <property name="SharingReference"    value="sap.com/tc~wd~dispwda"/>
+            <property name="SharingReference"    value="sap.com/tc~wd~corecomp"/>
+            <property name="SharingAccess"       value="true"/>
+            <property name="LibrariesReference"    value="tc/ddic/ddicservices"/>
+            <property name="LibrariesReference"    value="com.sap.aii.proxy.framework"/>
+            <property name="LibrariesReference"    value="webservices_lib"/>
+            <property name="LibrariesReference"    value="tc/graphics/igs"/>
+            <property name="LibrariesReference"    value="com.sap.mw.jco"/>
+            <property name="LibrariesReference"    value="com.sap.lcr.api.cimclient"/>
+            <property name="LibrariesReference"    value="sapxmltoolkit"/>
+            <property name="LibrariesReference"    value="com.sap.aii.util.rb"/>
+            <property name="LibrariesReference"    value="com.sap.util.monitor.jarm"/>
+            <property name="LibrariesReference"    value="tc/ddic/ddicruntime"/>
+            <property name="LibrariesReference"    value="com.sap.security.api.sda"/>
+            <property name="LibrariesReference"    value="com.sap.aii.util.xml"/>
+            <property name="LibrariesReference"    value="com.sap.aii.util.misc"/>
+            <property name="LibrariesReference"    value="tc/cmi"/>
+                  <property name="ServicesReference"   value="sld"/>
+              </application-config>
+  <components/>
+  <services/>
+  <webdynpro>
+      <!-- applications -->
+      <applications>
+                    <part shortName="App" name="com.kl.app.App">          
+          <!-- application to component -->
+                              </part> 
+                </applications>
+      <!-- components -->
+      <components>
+                    <part shortName="MCComp" name="com.kl.comp.MCComp">
+          
+          <!-- component to component(Interfaces) -->
+          
+          <!-- component to models -->  
+                                        <!-- component to implementedInterfaces -->          
+                              </part> 
+                </components>
+      <!-- interface definitions -->
+      <interfaces>
+                </interfaces>
+      <models>
+          <!-- models -->
+                    <part shortName="MCModel" name="com.kl.model.MCModel">
+          <!-- model to models -->
+          </part> 
+                </models>
+     <runtime-classes>
+     </runtime-classes> 
+     <wdgeninfo>
+		<wdgencomponent name="SapMetamodelCore">7.0009.20060210160857.0000 (release=645_VAL_REL, buildtime=2006-08-26:14:13:38[UTC], changelist=388995, host=PWDFM101.wdf.sap.corp)</wdgencomponent>
+		<wdgencomponent name="SapMetamodelCommon">7.0009.20060210160857.0000 (release=645_VAL_REL, buildtime=2006-08-26:14:13:46[UTC], changelist=388995, host=PWDFM101.wdf.sap.corp)</wdgencomponent>
+		<wdgencomponent name="SapMetamodelDictionary">7.0009.20060719095619.0000 (release=645_VAL_REL, buildtime=2006-08-26:14:21:59[UTC], changelist=411251, host=PWDFM101.wdf.sap.corp)</wdgencomponent>
+		<wdgencomponent name="SapMetamodelWebDynpro">7.0009.20060428190938.0000 (release=645_VAL_REL, buildtime=2006-08-26:14:26:52[UTC], changelist=400815, host=PWDFM101.wdf.sap.corp)</wdgencomponent>
+		<wdgencomponent name="SapGenerationFrameworkCore">7.0009.20060719095755.0000 (release=645_VAL_REL, buildtime=2006-08-26:14:12:57[UTC], changelist=411255, host=PWDFM101.wdf.sap.corp)</wdgencomponent>
+		<wdgencomponent name="SapDictionaryGenerationCore">7.0009.20060802115015.0000 (release=645_VAL_REL, buildtime=2006-08-26:14:24:21[UTC], changelist=413123, host=PWDFM101.wdf.sap.corp)</wdgencomponent>
+		<wdgencomponent name="SapDictionaryGenerationTemplates">(unknown)</wdgencomponent>
+		<wdgencomponent name="SapWebDynproGenerationCore">7.0009.20060802115035.0000 (release=645_VAL_REL, buildtime=2006-08-26:14:30:11[UTC], changelist=413124, host=PWDFM101.wdf.sap.corp)</wdgencomponent>
+		<wdgencomponent name="SapWebDynproGenerationTemplates">7.0009.20060804145649.0000 (release=645_VAL_REL, buildtime=2006-08-26:14:45:29[UTC], changelist=413534, host=pwdfm101)</wdgencomponent>
+		<wdgencomponent name="SapWebDynproGenerationCTemplates">7.0009.20060804145649.0000 (release=645_VAL_REL, buildtime=2006-08-26:14:45:29[UTC], changelist=413534, host=pwdfm101)</wdgencomponent>
+		<wdgencomponent name="SapIdeWebDynproCheckLayer">7.0009.20060802115035.0000 (release=645_VAL_REL, buildtime=2006-08-26:14:30:00[UTC], changelist=413124, host=PWDFM101.wdf.sap.corp)</wdgencomponent>
+     </wdgeninfo>
+  </webdynpro>
+</application>

@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+SDM-SDA-Comp-Version: 1
+softwaretype: J2EE
+JarSAP-Version: 0000
+JarSAPProcessing-Version: 0000
+changelistnumber: 0000
+perforceserver: 0000
+deployfile: wd.xml
+keyname: MultiCountryPrototype
+keyvendor: local
+keylocation: LOKAL
+keycounter: 0.2014.08.08.18.28.04
+JarSL-Version: 0000
+compress: true
+
+Name: MultiCountryPrototype.wda
+content:  
+
+Name: META-INF/wd.xml
+content:  
+

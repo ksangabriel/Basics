@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MetaDataAPI generated on: Wednesday, February 15, 2006 8:38:35 AM CET -->
+<View xmlns="http://xml.sap.com/2002/10/metamodel/webdynpro" xmlns:IDX="urn:sap.com:WebDynpro.View:2.0" mmRelease="6.30" mmVersion="2.0" mmTimestamp="1139989115534" name="MCCompView" package="com.kl.comp" masterLanguage="en">
+	<AbstractView.ViewController>
+		<Core.Reference package="com.kl.comp" name="MCCompView" type="Controller"/>
+	</AbstractView.ViewController>
+	<View.Parent>
+		<Core.Reference package="com.kl.comp" name="MCComp" type="Component"/>
+	</View.Parent>
+	<View.RootUIElementContainer>
+		<TransparentContainer name="RootUIElementContainer">
+			<UIElementContainer.Children>
+				<Table name="Table1">
+					<ViewElement.ContextBindings>
+						<UIElementContextBinding name="dataSource">
+							<UIElementContextBinding.BoundContextElement>
+								<Core.Reference package="com.kl.comp" name="MCCompView" type="Controller" path="Context/ChildNode:AclUserTemp"/>
+							</UIElementContextBinding.BoundContextElement>
+							<UIElementContextBinding.UIElementProperty>
+								<Core.Reference package="com.sap.ide.webdynpro.uielementdefinitions" name="Table" type="UIElementDefinition" path="Property:dataSource"/>
+							</UIElementContextBinding.UIElementProperty>
+						</UIElementContextBinding>
+					</ViewElement.ContextBindings>
+					<ViewElement.Definition>
+						<Core.Reference package="com.sap.ide.webdynpro.uielementdefinitions" name="Table" type="UIElementDefinition"/>
+					</ViewElement.Definition>
+					<UIElement.LayoutData>
+						<FlowData name="LayoutData" paddingBottom="15px" paddingTop="15px">
+						</FlowData>
+					</UIElement.LayoutData>
+					<Table.Columns>
+						<TableColumn name="Column2">
+							<TableColumn.Header>
+								<Caption name="Column2_header">
+								</Caption>
+							</TableColumn.Header>
+							<TableColumn.TableCellEditor>
+								<DropDownByKey name="DropDownByKey">
+									<ViewElement.ContextBindings>
+										<UIElementContextBinding name="selectedKey">
+											<UIElementContextBinding.BoundContextElement>
+												<Core.Reference package="com.kl.comp" name="MCCompView" type="Controller" path="Context/ChildNode:AclUserTemp/Attribute:countryCode"/>
+											</UIElementContextBinding.BoundContextElement>
+											<UIElementContextBinding.UIElementProperty>
+												<Core.Reference package="com.sap.ide.webdynpro.uielementdefinitions" name="AbstractDropDownByKey" type="UIElementDefinition" path="Property:selectedKey"/>
+											</UIElementContextBinding.UIElementProperty>
+										</UIElementContextBinding>
+									</ViewElement.ContextBindings>
+									<ViewElement.Definition>
+										<Core.Reference package="com.sap.ide.webdynpro.uielementdefinitions" name="DropDownByKey" type="UIElementDefinition"/>
+									</ViewElement.Definition>
+								</DropDownByKey>
+							</TableColumn.TableCellEditor>
+						</TableColumn>
+						<TableColumn name="Column3">
+							<TableColumn.Header>
+								<Caption name="Column3_header">
+								</Caption>
+							</TableColumn.Header>
+							<TableColumn.TableCellEditor>
+								<Button design="emphasized" name="Button" text_isDependent="false">
+									<ViewElement.EventBindings>
+										<UIElementEventBinding name="onAction">
+											<UIElementEventBinding.BoundAction>
+												<Core.Reference package="com.kl.comp" name="MCCompView" type="Controller" path="Action:removeItem"/>
+											</UIElementEventBinding.BoundAction>
+											<UIElementEventBinding.UIElementEvent>
+												<Core.Reference package="com.sap.ide.webdynpro.uielementdefinitions" name="AbstractButton" type="UIElementDefinition" path="Event:onAction"/>
+											</UIElementEventBinding.UIElementEvent>
+										</UIElementEventBinding>
+									</ViewElement.EventBindings>
+									<ViewElement.Definition>
+										<Core.Reference package="com.sap.ide.webdynpro.uielementdefinitions" name="Button" type="UIElementDefinition"/>
+									</ViewElement.Definition>
+								</Button>
+							</TableColumn.TableCellEditor>
+						</TableColumn>
+					</Table.Columns>
+				</Table>
+				<Button design="emphasized" name="Button1" text_isDependent="false">
+					<ViewElement.EventBindings>
+						<UIElementEventBinding name="onAction">
+							<UIElementEventBinding.BoundAction>
+								<Core.Reference package="com.kl.comp" name="MCCompView" type="Controller" path="Action:update"/>
+							</UIElementEventBinding.BoundAction>
+							<UIElementEventBinding.UIElementEvent>
+								<Core.Reference package="com.sap.ide.webdynpro.uielementdefinitions" name="AbstractButton" type="UIElementDefinition" path="Event:onAction"/>
+							</UIElementEventBinding.UIElementEvent>
+						</UIElementEventBinding>
+					</ViewElement.EventBindings>
+					<ViewElement.Definition>
+						<Core.Reference package="com.sap.ide.webdynpro.uielementdefinitions" name="Button" type="UIElementDefinition"/>
+					</ViewElement.Definition>
+					<UIElement.LayoutData>
+						<FlowData name="LayoutData" paddingTop="15px">
+						</FlowData>
+					</UIElement.LayoutData>
+				</Button>
+				<Button design="emphasized" name="Button2" text_isDependent="false">
+					<ViewElement.EventBindings>
+						<UIElementEventBinding name="onAction">
+							<UIElementEventBinding.BoundAction>
+								<Core.Reference package="com.kl.comp" name="MCCompView" type="Controller" path="Action:add"/>
+							</UIElementEventBinding.BoundAction>
+							<UIElementEventBinding.UIElementEvent>
+								<Core.Reference package="com.sap.ide.webdynpro.uielementdefinitions" name="AbstractButton" type="UIElementDefinition" path="Event:onAction"/>
+							</UIElementEventBinding.UIElementEvent>
+						</UIElementEventBinding>
+					</ViewElement.EventBindings>
+					<ViewElement.Definition>
+						<Core.Reference package="com.sap.ide.webdynpro.uielementdefinitions" name="Button" type="UIElementDefinition"/>
+					</ViewElement.Definition>
+					<UIElement.LayoutData>
+						<FlowData name="LayoutData">
+						</FlowData>
+					</UIElement.LayoutData>
+				</Button>
+			</UIElementContainer.Children>
+			<UIElementContainer.Layout>
+				<FlowLayout name="Layout">
+				</FlowLayout>
+			</UIElementContainer.Layout>
+		</TransparentContainer>
+	</View.RootUIElementContainer>
+</View>

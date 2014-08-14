@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><wdrr:repository xmlns:wdrr="http://xml.sap.com/2002/04/webdynpro/runtime_repository" xmlns:wdapp="http://xml.sap.com/2002/04/webdynpro/runtime_repository/model" schemaRelease="WebAS 7.00" schemaVersion="20040901" modelRelease="WebAS 7.00" modelVersion="20040901" modelName="com.sap.tc.webdynpro.progmodel.repository.IWDProgmodelRepository" layerType="V" layerQualifier="base" custQualifier="base" fileGUID="1">
+	<wdapp:IWDComponentInfo wdrr:original="true" wdrr:masterlocale="en" name="com.kl.comp.MCComp">
+		<wdrr:aggregation name="Windows">
+			<wdapp:IWDWindowInfo wdrr:state="A" wdrr:orderIndex="0" wdrr:original="true" package="com.kl.comp" name="MCComp">
+				<wdrr:aggregation name="RootViewUsages">
+					<wdapp:IWDViewUsageInfo wdrr:state="A" wdrr:orderIndex="0" wdrr:original="true" name="com.kl.comp.MCCompViewUsage1">
+						<wdrr:association name="View">
+							<wdrr:entry state="A" orderIndex="0" targetPath="Views:MCCompView"/>
+						</wdrr:association>
+						<wdrr:association name="Window">
+							<wdrr:entry state="A" orderIndex="0" targetPath="Windows:MCComp"/>
+						</wdrr:association>
+					</wdapp:IWDViewUsageInfo>
+				</wdrr:aggregation>
+				<wdrr:association name="Component">
+					<wdrr:entry state="A" orderIndex="0"/>
+				</wdrr:association>
+				<wdrr:association name="DefaultRootViewUsage">
+					<wdrr:entry state="A" orderIndex="0" targetPath="Windows:MCComp/RootViewUsages:com.kl.comp.MCCompViewUsage1"/>
+				</wdrr:association>
+				<wdrr:association name="InterfaceView">
+					<wdrr:entry state="A" orderIndex="0" targetPath="ComponentInterface:MCCompInterface/InterfaceViews:MCCompInterfaceView"/>
+				</wdrr:association>
+			</wdapp:IWDWindowInfo>
+		</wdrr:aggregation>
+		<wdrr:aggregation name="ComponentInterface">
+			<wdapp:IWDComponentInterfaceImplementationInfo wdrr:state="A" wdrr:orderIndex="0" wdrr:original="true" package="com.kl.comp" name="MCCompInterface">
+				<wdrr:association name="Component">
+					<wdrr:entry state="A" orderIndex="0"/>
+				</wdrr:association>
+				<wdrr:aggregation name="Controllers">
+					<wdapp:IWDControllerInfo wdrr:state="A" wdrr:orderIndex="0" wdrr:original="true" type="component_interface" package="com.kl.comp" name="MCCompInterface"/>
+					<wdapp:IWDControllerInfo wdrr:state="A" wdrr:orderIndex="1" wdrr:original="true" type="interface_view" package="com.kl.comp" name="MCCompInterfaceView">
+						<wdrr:aggregation name="EventHandlers">
+							<wdapp:IWDEventHandlerInfo wdrr:state="A" wdrr:orderIndex="0" wdrr:original="true" name="onPlugDefault"/>
+						</wdrr:aggregation>
+					</wdapp:IWDControllerInfo>
+					<wdapp:IWDControllerInfo wdrr:state="A" wdrr:orderIndex="2" wdrr:original="true" type="component_configuration" package="com.kl.comp" name="MCCompInterfaceCfg"/>
+				</wdrr:aggregation>
+				<wdrr:aggregation name="InterfaceViews">
+					<wdapp:IWDInterfaceViewInfo wdrr:state="A" wdrr:orderIndex="0" wdrr:original="true" lifespan="framework_controlled" package="com.kl.comp" name="MCCompInterfaceView">
+						<wdrr:association name="ImplementationWindow">
+							<wdrr:entry state="A" orderIndex="0" targetPath="Windows:MCComp"/>
+						</wdrr:association>
+						<wdrr:aggregation name="InboundPlugs">
+							<wdapp:IWDInboundPlugInfo wdrr:state="A" wdrr:orderIndex="0" wdrr:original="true" type="startup" name="Default">
+								<wdrr:association name="View">
+									<wdrr:entry state="A" orderIndex="0" targetPath="ComponentInterface:MCCompInterface/InterfaceViews:MCCompInterfaceView"/>
+								</wdrr:association>
+								<wdrr:association name="EventHandler">
+									<wdrr:entry state="A" orderIndex="0" targetPath="ComponentInterface:MCCompInterface/Controllers:MCCompInterfaceView/EventHandlers:onPlugDefault"/>
+								</wdrr:association>
+							</wdapp:IWDInboundPlugInfo>
+						</wdrr:aggregation>
+						<wdrr:association name="ViewController">
+							<wdrr:entry state="A" orderIndex="0" targetPath="ComponentInterface:MCCompInterface/Controllers:MCCompInterfaceView"/>
+						</wdrr:association>
+					</wdapp:IWDInterfaceViewInfo>
+				</wdrr:aggregation>
+				<wdrr:association name="InterfaceController">
+					<wdrr:entry state="A" orderIndex="0" targetPath="ComponentInterface:MCCompInterface/Controllers:MCCompInterface"/>
+				</wdrr:association>
+				<wdrr:association name="ConfigurationController">
+					<wdrr:entry state="A" orderIndex="0" targetPath="ComponentInterface:MCCompInterface/Controllers:MCCompInterfaceCfg"/>
+				</wdrr:association>
+			</wdapp:IWDComponentInterfaceImplementationInfo>
+		</wdrr:aggregation>
+		<wdrr:aggregation name="EmptyView">
+			<wdapp:IWDEmptyViewInfo wdrr:state="A" wdrr:orderIndex="0" wdrr:original="true" lifespan="framework_controlled" package="" name="EmptyView">
+				<wdrr:aggregation name="InboundPlugs">
+					<wdapp:IWDInboundPlugInfo wdrr:state="A" wdrr:orderIndex="0" wdrr:original="true" type="standard" name="ShowEmptyView">
+						<wdrr:association name="View">
+							<wdrr:entry state="A" orderIndex="0" targetPath="EmptyView:EmptyView"/>
+						</wdrr:association>
+					</wdapp:IWDInboundPlugInfo>
+				</wdrr:aggregation>
+			</wdapp:IWDEmptyViewInfo>
+		</wdrr:aggregation>
+		<wdrr:aggregation name="Controllers">
+			<wdapp:IWDControllerInfo wdrr:state="A" wdrr:orderIndex="0" wdrr:original="true" type="component" package="com.kl.comp" name="MCComp"/>
+			<wdapp:IWDControllerInfo wdrr:state="A" wdrr:orderIndex="1" wdrr:original="true" type="view" package="com.kl.comp" name="MCCompView">
+				<wdrr:aggregation name="Actions">
+					<wdapp:IWDActionInfo wdrr:state="A" wdrr:orderIndex="0" wdrr:original="true" name="removeItem">
+						<wdrr:association name="Controller">
+							<wdrr:entry state="A" orderIndex="0" targetPath="Controllers:MCCompView"/>
+						</wdrr:association>
+						<wdrr:association name="EventHandler">
+							<wdrr:entry state="A" orderIndex="0" targetPath="Controllers:MCCompView/EventHandlers:onActionremoveItem"/>
+						</wdrr:association>
+					</wdapp:IWDActionInfo>
+					<wdapp:IWDActionInfo wdrr:state="A" wdrr:orderIndex="1" wdrr:original="true" name="update">
+						<wdrr:association name="Controller">
+							<wdrr:entry state="A" orderIndex="0" targetPath="Controllers:MCCompView"/>
+						</wdrr:association>
+						<wdrr:association name="EventHandler">
+							<wdrr:entry state="A" orderIndex="0" targetPath="Controllers:MCCompView/EventHandlers:onActionupdate"/>
+						</wdrr:association>
+					</wdapp:IWDActionInfo>
+					<wdapp:IWDActionInfo wdrr:state="A" wdrr:orderIndex="2" wdrr:original="true" name="add">
+						<wdrr:association name="Controller">
+							<wdrr:entry state="A" orderIndex="0" targetPath="Controllers:MCCompView"/>
+						</wdrr:association>
+						<wdrr:association name="EventHandler">
+							<wdrr:entry state="A" orderIndex="0" targetPath="Controllers:MCCompView/EventHandlers:onActionadd"/>
+						</wdrr:association>
+					</wdapp:IWDActionInfo>
+				</wdrr:aggregation>
+				<wdrr:aggregation name="EventHandlers">
+					<wdapp:IWDEventHandlerInfo wdrr:state="A" wdrr:orderIndex="0" wdrr:original="true" name="onActionremoveItem"/>
+					<wdapp:IWDEventHandlerInfo wdrr:state="A" wdrr:orderIndex="1" wdrr:original="true" name="onActionupdate"/>
+					<wdapp:IWDEventHandlerInfo wdrr:state="A" wdrr:orderIndex="2" wdrr:original="true" name="onActionadd"/>
+				</wdrr:aggregation>
+			</wdapp:IWDControllerInfo>
+		</wdrr:aggregation>
+		<wdrr:aggregation name="Views">
+			<wdapp:IWDViewInfo wdrr:state="A" wdrr:orderIndex="0" wdrr:original="true" lifespan="framework_controlled" package="com.kl.comp" name="MCCompView">
+				<wdrr:association name="ViewController">
+					<wdrr:entry state="A" orderIndex="0" targetPath="Controllers:MCCompView"/>
+				</wdrr:association>
+			</wdapp:IWDViewInfo>
+		</wdrr:aggregation>
+		<wdrr:aggregation name="UsedUIELibraries">
+			<wdapp:IWDUIElementLibraryInfo wdrr:state="A" wdrr:orderIndex="0" wdrr:original="true" name="Standard"/>
+			<wdapp:IWDUIElementLibraryInfo wdrr:state="A" wdrr:orderIndex="1" wdrr:original="true" name="BusinessGraphics"/>
+		</wdrr:aggregation>
+	</wdapp:IWDComponentInfo>
+</wdrr:repository>

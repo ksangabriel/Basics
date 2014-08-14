@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet >
+	<view uin="V-qm6t9hyl6d1z1fxbxcg">
+		<property name="$parentUin" value="WebDynpro:Component:://WebDynpro/Component#com.kl.comp.MCComp"/>
+		<property name="$defaultDiagram" value="true"/>
+		<property name="$metaclass" value="WDComponentDiagram"/>
+		<reference referencedUin="WebDynpro:Component:://WebDynpro/Component#com.kl.comp.MCComp">
+			<property name="bounds" value="10,10,834,570"/>
+			<reference referencedUin="WebDynpro:ComponentInterface:://WebDynpro/ComponentInterfaceImplementation#com.kl.comp.MCCompInterface">
+				<property name="bounds" value="0,0,128,50"/>
+				<reference referencedUin="WebDynpro:InterfaceController:://WebDynpro/Controller#com.kl.comp.MCCompInterface">
+					<property name="bounds" value="0,0,129,50"/>
+				</reference>
+			</reference>
+			<reference referencedUin="WebDynpro:CustomControllers:://WebDynpro/Component#com.kl.comp.MCComp">
+				<property name="bounds" value="0,0,121,50"/>
+				<reference referencedUin="WebDynpro:ComponentController:://WebDynpro/Controller#com.kl.comp.MCComp">
+					<property name="bounds" value="0,0,139,50"/>
+					<reference referencedUin="WebDynpro:DataLink:://WebDynpro/Controller#com.kl.comp.MCComp#//WebDynpro/Model#com.kl.model.MCModel">
+						<property name="bendpoints" value=""/>
+					</reference>
+				</reference>
+			</reference>
+			<reference referencedUin="WebDynpro:ModelUsages:://WebDynpro/Component#com.kl.comp.MCComp">
+				<property name="bounds" value="0,0,90,50"/>
+				<reference referencedUin="WebDynpro:ModelUsage://WebDynpro/Model#com.kl.model.MCModel://WebDynpro/Component#com.kl.comp.MCComp">
+					<property name="bounds" value="0,0,77,50"/>
+				</reference>
+			</reference>
+			<reference referencedUin="WebDynpro:Views:://WebDynpro/Component#com.kl.comp.MCComp">
+				<property name="bounds" value="0,0,57,50"/>
+				<reference referencedUin="WebDynpro:View:://WebDynpro/View#com.kl.comp.MCCompView">
+					<property name="bounds" value="0,0,98,50"/>
+					<reference referencedUin="WebDynpro:DataLink:://WebDynpro/View#com.kl.comp.MCCompView#//WebDynpro/Controller#com.kl.comp.MCComp">
+						<property name="bendpoints" value=""/>
+					</reference>
+				</reference>
+			</reference>
+			<reference referencedUin="WebDynpro:ComponentUsages:://WebDynpro/Component#com.kl.comp.MCComp">
+				<property name="bounds" value="0,0,180,50"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>

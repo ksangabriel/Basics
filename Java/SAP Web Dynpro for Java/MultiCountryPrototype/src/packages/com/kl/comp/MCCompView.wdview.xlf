@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xliff version="1.1">
+<file source-language="en" product-name="@@92a2983331894f59040bfcb10d1923a8View:MCCompView[com.kl.comp] of Component:MCComp[com.kl.comp]" datatype="s2x">
+<header>
+<skl>
+</skl>
+<phase-group>
+</phase-group>
+<s2x xmlns="http://www.sap.com">
+<dtr>
+<sc></sc>
+</dtr>
+<giltDirectives>
+<develContact>Administrator</develContact><domain></domain>
+<originalLocale xml:lang="en"/>
+<maxLength>255</maxLength>
+</giltDirectives>
+</s2x>
+</header>
+<body>
+<group restype="button">
+<trans-unit id="29943676166046f7001582d23679bd25" resname="RootUIElementContainer/Child:Table1/Column:Column3/TableCellEditor@text" maxwidth="255" translate="yes"><source>Remove</source></trans-unit>
+<trans-unit id="7c7479c2bb8d458f1b01844713501e45" resname="RootUIElementContainer/Child:Button2@text" maxwidth="255" translate="yes"><source>Add</source></trans-unit>
+<trans-unit id="e79482de9c15465c30c2f92473273998" resname="RootUIElementContainer/Child:Button1@text" maxwidth="255" translate="yes"><source>Update</source></trans-unit>
+</group>
+</body>
+</file>
+</xliff>
