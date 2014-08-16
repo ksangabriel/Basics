@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+	<!-- Using Jersey, place all jars files in Tomcat/webapps/<you-app-context>/WEB-INF/lib/ -->
+	<servlet>
+		<servlet-name>test</servlet-name>
+		<servlet-class>com.sun.jersey.spi.container.servlet.Servletcontainer</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+</web-app>
